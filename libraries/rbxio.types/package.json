@@ -1,0 +1,70 @@
+{
+	"name": "@rbxio/types",
+	"description": "TypeScript type definitions for Roblox APIs",
+	"version": "1.0.0",
+	"private": true,
+	"publishConfig": {
+		"access": "public"
+	},
+	"license": "Apache-2.0",
+	"author": "@bracketed",
+	"main": "lib/cjs/index.cjs",
+	"module": "lib/esm/index.mjs",
+	"types": "lib/cjs/index.d.ts",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./lib/esm/index.d.mts",
+				"default": "./lib/esm/index.mjs"
+			},
+			"require": {
+				"types": "./lib/cjs/index.d.ts",
+				"default": "./lib/cjs/index.cjs"
+			}
+		},
+		"./api": {
+			"import": {
+				"types": "./lib/esm/api/index.d.mts",
+				"default": "./lib/esm/api/index.mjs"
+			},
+			"require": {
+				"types": "./lib/cjs/api/index.d.ts",
+				"default": "./lib/cjs/api/index.cjs"
+			}
+		},
+		"./cloud": {
+			"import": {
+				"types": "./lib/esm/cloud/index.d.mts",
+				"default": "./lib/esm/cloud/index.mjs"
+			},
+			"require": {
+				"types": "./lib/cjs/cloud/index.d.ts",
+				"default": "./lib/cjs/cloud/index.cjs"
+			}
+		}
+	},
+	"files": [
+		"lib"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bracketed/rbxio.js",
+		"directory": "libraries/rbxio.types"
+	},
+	"homepage": "https://bracketed.co.uk",
+	"sideEffects": false,
+	"bugs": {
+		"url": "https://github.com/bracketed/rbxio.js/issues"
+	},
+	"keywords": [
+		"roblox",
+		"rbxio",
+		"types",
+		"typescript"
+	],
+	"scripts": {
+		"lint": "prettier --write .",
+		"validate": "prettier --check .",
+		"build": "tsup"
+	}
+}

@@ -1,49 +1,34 @@
 {
-	"name": "@bracketed/package",
-	"description": "Description",
+	"name": "@rbxio/monorepo",
+	"description": "Monorepo for rbxio.js - Roblox API libraries",
 	"packageManager": "yarn@4.9.2",
 	"version": "1.0.0",
 	"private": true,
-	"publishConfig": {
-		"access": "public"
-	},
 	"license": "Apache-2.0",
 	"author": "@bracketed",
-	"main": "lib/cjs/index.cjs",
-	"module": "lib/esm/index.mjs",
-	"types": "lib/cjs/index.d.ts",
-	"exports": {
-		".": {
-			"import": {
-				"types": "./lib/esm/index.d.mts",
-				"default": "./lib/esm/index.mjs"
-			},
-			"require": {
-				"types": "./lib/cjs/index.d.ts",
-				"default": "./lib/cjs/index.cjs"
-			}
-		}
-	},
-	"files": [
-		"lib"
+	"workspaces": [
+		"libraries/*"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/bracketed/templates-package"
+		"url": "https://github.com/bracketed/rbxio.js"
 	},
 	"homepage": "https://bracketed.co.uk",
-	"sideEffects": false,
 	"bugs": {
-		"url": "https://github.com/bracketed/templates-package/issues"
+		"url": "https://github.com/bracketed/rbxio.js/issues"
 	},
 	"keywords": [
-		"bracketed",
-		"typescript"
+		"roblox",
+		"rbxio",
+		"api",
+		"monorepo"
 	],
 	"scripts": {
-		"lint": "yarn prettier --write .",
-		"validate": "yarn prettier --check .",
-		"build": "tsup",
+		"lint": "yarn workspaces foreach -Apt run lint",
+		"validate": "yarn workspaces foreach -Apt run validate",
+		"build": "yarn workspaces foreach -Apt run build",
+		"build:watch": "yarn workspaces foreach -Aipt run build --watch",
+		"clean": "yarn workspaces foreach -Apt exec rm -rf lib",
 		"update": "yarn upgrade-interactive"
 	},
 	"devDependencies": {
@@ -62,8 +47,5 @@
 	},
 	"engines": {
 		"node": ">=18"
-	},
-	"dependencies": {
-		"@bracketed/tsup-configuration": "^1.0.5"
 	}
 }
