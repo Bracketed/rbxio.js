@@ -1,5 +1,5 @@
 {
-	"name": "@rbxio/types",
+	"name": "@bracketed/rbxio.types",
 	"description": "TypeScript type definitions for Roblox APIs",
 	"version": "1.0.0",
 	"private": true,

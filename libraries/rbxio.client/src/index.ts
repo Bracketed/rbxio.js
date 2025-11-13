@@ -1,5 +1,5 @@
 /**
- * @rbxio/client - Client library
+ * @bracketed/rbxio.client - Client library
  */
 
 export const Client = 'Client placeholder';

@@ -1,5 +1,5 @@
 /**
- * @rbxio/rest/cloud - Cloud API wrapper
+ * @bracketed/rbxio.rest/cloud - Cloud API wrapper
  */
 
 export const CloudAPI = 'CloudAPI placeholder';

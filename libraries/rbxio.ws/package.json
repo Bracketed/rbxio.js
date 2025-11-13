@@ -1,5 +1,5 @@
 {
-	"name": "@rbxio/ws",
+	"name": "@bracketed/rbxio.ws",
 	"description": "WebSocket and polling event emitter for Roblox API changes",
 	"version": "1.0.0",
 	"private": true,

@@ -1,5 +1,5 @@
 /**
- * @rbxio/types - TypeScript type definitions
+ * @bracketed/rbxio.types - TypeScript type definitions
  * Main entry point
  */
 

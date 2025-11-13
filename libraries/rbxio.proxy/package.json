@@ -1,5 +1,5 @@
 {
-	"name": "@rbxio/proxy",
+	"name": "@bracketed/rbxio.proxy",
 	"description": "Proxy server for Roblox API requests",
 	"version": "1.0.0",
 	"private": true,

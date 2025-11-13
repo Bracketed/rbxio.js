@@ -1,5 +1,5 @@
 {
-	"name": "@rbxio/monorepo",
+	"name": "@bracketed/rbxio.monorepo",
 	"description": "Monorepo for rbxio.js - Roblox API libraries",
 	"packageManager": "yarn@4.9.2",
 	"version": "1.0.0",
@@ -32,6 +32,8 @@
 		"update": "yarn upgrade-interactive"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "^2.3.5",
+		"@bracketed/tsup-configuration": "^1.0.5",
 		"@bracketed/typescript-config": "^4.7.1",
 		"@swc/core": "^1.12.5",
 		"@types/node": "^24.0.3",
@@ -40,7 +42,6 @@
 		"esbuild-plugin-copy": "^2.1.1",
 		"esbuild-plugin-file-path-extensions": "^2.1.4",
 		"esbuild-plugin-version-injector": "^1.2.1",
-		"prettier": "^3.5.3",
 		"tslib": "^2.8.1",
 		"tsup": "^8.5.0",
 		"typescript": "^5.8.3"

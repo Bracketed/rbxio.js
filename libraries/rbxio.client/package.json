@@ -1,5 +1,5 @@
 {
-	"name": "@rbxio/client",
+	"name": "@bracketed/rbxio.client",
 	"description": "Client library for interacting with Roblox APIs",
 	"version": "1.0.0",
 	"private": true,

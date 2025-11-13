@@ -1,5 +1,5 @@
 /**
- * @rbxio/rest - REST API wrapper for Roblox APIs
+ * @bracketed/rbxio.rest - REST API wrapper for Roblox APIs
  * Main entry point
  */
 

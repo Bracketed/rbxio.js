@@ -5,6 +5,182 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@biomejs/biome@npm:^2.3.5":
+  version: 2.3.5
+  resolution: "@biomejs/biome@npm:2.3.5"
+  dependencies:
+    "@biomejs/cli-darwin-arm64": "npm:2.3.5"
+    "@biomejs/cli-darwin-x64": "npm:2.3.5"
+    "@biomejs/cli-linux-arm64": "npm:2.3.5"
+    "@biomejs/cli-linux-arm64-musl": "npm:2.3.5"
+    "@biomejs/cli-linux-x64": "npm:2.3.5"
+    "@biomejs/cli-linux-x64-musl": "npm:2.3.5"
+    "@biomejs/cli-win32-arm64": "npm:2.3.5"
+    "@biomejs/cli-win32-x64": "npm:2.3.5"
+  dependenciesMeta:
+    "@biomejs/cli-darwin-arm64":
+      optional: true
+    "@biomejs/cli-darwin-x64":
+      optional: true
+    "@biomejs/cli-linux-arm64":
+      optional: true
+    "@biomejs/cli-linux-arm64-musl":
+      optional: true
+    "@biomejs/cli-linux-x64":
+      optional: true
+    "@biomejs/cli-linux-x64-musl":
+      optional: true
+    "@biomejs/cli-win32-arm64":
+      optional: true
+    "@biomejs/cli-win32-x64":
+      optional: true
+  bin:
+    biome: bin/biome
+  checksum: 10c0/c29264d9e3427b665a169af01aadea5584def961397ff6e1d1be4f16c5d37aca1b1b6ea1e6190c63330d0d8022009261ddc4c42a39727f77d5668b91e427b4f3
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-darwin-arm64@npm:2.3.5":
+  version: 2.3.5
+  resolution: "@biomejs/cli-darwin-arm64@npm:2.3.5"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-darwin-x64@npm:2.3.5":
+  version: 2.3.5
+  resolution: "@biomejs/cli-darwin-x64@npm:2.3.5"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-linux-arm64-musl@npm:2.3.5":
+  version: 2.3.5
+  resolution: "@biomejs/cli-linux-arm64-musl@npm:2.3.5"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-linux-arm64@npm:2.3.5":
+  version: 2.3.5
+  resolution: "@biomejs/cli-linux-arm64@npm:2.3.5"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-linux-x64-musl@npm:2.3.5":
+  version: 2.3.5
+  resolution: "@biomejs/cli-linux-x64-musl@npm:2.3.5"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-linux-x64@npm:2.3.5":
+  version: 2.3.5
+  resolution: "@biomejs/cli-linux-x64@npm:2.3.5"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-win32-arm64@npm:2.3.5":
+  version: 2.3.5
+  resolution: "@biomejs/cli-win32-arm64@npm:2.3.5"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@biomejs/cli-win32-x64@npm:2.3.5":
+  version: 2.3.5
+  resolution: "@biomejs/cli-win32-x64@npm:2.3.5"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@bracketed/rbxio.client@workspace:libraries/rbxio.client":
+  version: 0.0.0-use.local
+  resolution: "@bracketed/rbxio.client@workspace:libraries/rbxio.client"
+  languageName: unknown
+  linkType: soft
+
+"@bracketed/rbxio.framework@workspace:libraries/rbxio.framework":
+  version: 0.0.0-use.local
+  resolution: "@bracketed/rbxio.framework@workspace:libraries/rbxio.framework"
+  languageName: unknown
+  linkType: soft
+
+"@bracketed/rbxio.monorepo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@bracketed/rbxio.monorepo@workspace:."
+  dependencies:
+    "@biomejs/biome": "npm:^2.3.5"
+    "@bracketed/tsup-configuration": "npm:^1.0.5"
+    "@bracketed/typescript-config": "npm:^4.7.1"
+    "@swc/core": "npm:^1.12.5"
+    "@types/node": "npm:^24.0.3"
+    esbuild: "npm:^0.25.5"
+    esbuild-fix-imports-plugin: "npm:^1.0.21"
+    esbuild-plugin-copy: "npm:^2.1.1"
+    esbuild-plugin-file-path-extensions: "npm:^2.1.4"
+    esbuild-plugin-version-injector: "npm:^1.2.1"
+    tslib: "npm:^2.8.1"
+    tsup: "npm:^8.5.0"
+    typescript: "npm:^5.8.3"
+  languageName: unknown
+  linkType: soft
+
+"@bracketed/rbxio.proxy@workspace:libraries/rbxio.proxy":
+  version: 0.0.0-use.local
+  resolution: "@bracketed/rbxio.proxy@workspace:libraries/rbxio.proxy"
+  languageName: unknown
+  linkType: soft
+
+"@bracketed/rbxio.reate@workspace:libraries/rbxio.cli":
+  version: 0.0.0-use.local
+  resolution: "@bracketed/rbxio.reate@workspace:libraries/rbxio.cli"
+  bin:
+    create-rbxio: ./lib/cjs/cli.cjs
+  languageName: unknown
+  linkType: soft
+
+"@bracketed/rbxio.rest@workspace:libraries/rbxio.rest":
+  version: 0.0.0-use.local
+  resolution: "@bracketed/rbxio.rest@workspace:libraries/rbxio.rest"
+  languageName: unknown
+  linkType: soft
+
+"@bracketed/rbxio.types@workspace:libraries/rbxio.types":
+  version: 0.0.0-use.local
+  resolution: "@bracketed/rbxio.types@workspace:libraries/rbxio.types"
+  languageName: unknown
+  linkType: soft
+
+"@bracketed/rbxio.utilities@workspace:libraries/rbxio.utilities":
+  version: 0.0.0-use.local
+  resolution: "@bracketed/rbxio.utilities@workspace:libraries/rbxio.utilities"
+  languageName: unknown
+  linkType: soft
+
+"@bracketed/rbxio.ws@workspace:libraries/rbxio.ws":
+  version: 0.0.0-use.local
+  resolution: "@bracketed/rbxio.ws@workspace:libraries/rbxio.ws"
+  languageName: unknown
+  linkType: soft
+
+"@bracketed/tsup-configuration@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "@bracketed/tsup-configuration@npm:1.0.5"
+  dependencies:
+    esbuild: "npm:^0.25.5"
+    esbuild-fix-imports-plugin: "npm:^1.0.21"
+    esbuild-plugin-copy: "npm:^2.1.1"
+    esbuild-plugin-file-path-extensions: "npm:^2.1.4"
+    esbuild-plugin-version-injector: "npm:^1.2.1"
+    tslib: "npm:^2.8.1"
+    tsup: "npm:^8.5.0"
+  checksum: 10c0/290db2da2e5a3ed35f14ffa7aafef10067470e4fab21cae3e656a274116fab3fc996a0e156a6ac0948aab0344c43c810a0473a047e3f3f2ab1a1fcfd5add4bc1
+  languageName: node
+  linkType: hard
+
 "@bracketed/typescript-config@npm:^4.7.1":
   version: 4.7.1
   resolution: "@bracketed/typescript-config@npm:4.7.1"
@@ -307,81 +483,6 @@ __metadata:
   checksum: 10c0/5bd7576bb1b38a47a7fc7b51ac9f38748e772beebc56200450c4a817d712232b8f1d3ef70532c80840243c657d491cf6a6be1e3a214cff907645819fdc34aadd
   languageName: node
   linkType: hard
-
-"@rbxio/client@workspace:libraries/rbxio.client":
-  version: 0.0.0-use.local
-  resolution: "@rbxio/client@workspace:libraries/rbxio.client"
-  languageName: unknown
-  linkType: soft
-
-"@rbxio/create@workspace:libraries/rbxio.create":
-  version: 0.0.0-use.local
-  resolution: "@rbxio/create@workspace:libraries/rbxio.create"
-  bin:
-    create-rbxio: ./lib/cjs/cli.cjs
-  languageName: unknown
-  linkType: soft
-
-"@rbxio/framework@workspace:libraries/rbxio.framework":
-  version: 0.0.0-use.local
-  resolution: "@rbxio/framework@workspace:libraries/rbxio.framework"
-  languageName: unknown
-  linkType: soft
-
-"@rbxio/monorepo@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@rbxio/monorepo@workspace:."
-  dependencies:
-    "@bracketed/typescript-config": "npm:^4.7.1"
-    "@swc/core": "npm:^1.12.5"
-    "@types/node": "npm:^24.0.3"
-    esbuild: "npm:^0.25.5"
-    esbuild-fix-imports-plugin: "npm:^1.0.21"
-    esbuild-plugin-copy: "npm:^2.1.1"
-    esbuild-plugin-file-path-extensions: "npm:^2.1.4"
-    esbuild-plugin-version-injector: "npm:^1.2.1"
-    prettier: "npm:^3.5.3"
-    tslib: "npm:^2.8.1"
-    tsup: "npm:^8.5.0"
-    typescript: "npm:^5.8.3"
-  languageName: unknown
-  linkType: soft
-
-"@rbxio/proxy@workspace:libraries/rbxio.proxy":
-  version: 0.0.0-use.local
-  resolution: "@rbxio/proxy@workspace:libraries/rbxio.proxy"
-  languageName: unknown
-  linkType: soft
-
-"@rbxio/rest@workspace:libraries/rbxio.rest":
-  version: 0.0.0-use.local
-  resolution: "@rbxio/rest@workspace:libraries/rbxio.rest"
-  languageName: unknown
-  linkType: soft
-
-"@rbxio/routes@workspace:libraries/rbxio.routes":
-  version: 0.0.0-use.local
-  resolution: "@rbxio/routes@workspace:libraries/rbxio.routes"
-  languageName: unknown
-  linkType: soft
-
-"@rbxio/types@workspace:libraries/rbxio.types":
-  version: 0.0.0-use.local
-  resolution: "@rbxio/types@workspace:libraries/rbxio.types"
-  languageName: unknown
-  linkType: soft
-
-"@rbxio/utilities@workspace:libraries/rbxio.utilities":
-  version: 0.0.0-use.local
-  resolution: "@rbxio/utilities@workspace:libraries/rbxio.utilities"
-  languageName: unknown
-  linkType: soft
-
-"@rbxio/ws@workspace:libraries/rbxio.ws":
-  version: 0.0.0-use.local
-  resolution: "@rbxio/ws@workspace:libraries/rbxio.ws"
-  languageName: unknown
-  linkType: soft
 
 "@rollup/rollup-android-arm-eabi@npm:4.44.0":
   version: 4.44.0
@@ -1782,15 +1883,6 @@ __metadata:
     yaml:
       optional: true
   checksum: 10c0/74173a58816dac84e44853f7afbd283f4ef13ca0b6baeba27701214beec33f9e309b128f8102e2b173e8d45ecba45d279a9be94b46bf48d219626aa9b5730848
-  languageName: node
-  linkType: hard
-
-"prettier@npm:^3.5.3":
-  version: 3.5.3
-  resolution: "prettier@npm:3.5.3"
-  bin:
-    prettier: bin/prettier.cjs
-  checksum: 10c0/3880cb90b9dc0635819ab52ff571518c35bd7f15a6e80a2054c05dbc8a3aa6e74f135519e91197de63705bcb38388ded7e7230e2178432a1468005406238b877
   languageName: node
   linkType: hard
 

@@ -1,5 +1,5 @@
 /**
- * @rbxio/types/api - API type definitions
+ * @bracketed/rbxio.types/api - API type definitions
  */
 
 export type APIResponse = {

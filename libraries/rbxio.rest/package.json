@@ -1,5 +1,5 @@
 {
-	"name": "@rbxio/rest",
+	"name": "@bracketed/rbxio.rest",
 	"description": "REST API wrapper for Roblox APIs including Cloud and Web APIs",
 	"version": "1.0.0",
 	"private": true,

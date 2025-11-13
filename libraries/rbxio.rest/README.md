@@ -1,4 +1,4 @@
-# @rbxio/rest
+# @bracketed/rbxio.rest
 
 REST API wrapper for Roblox APIs, including Cloud and Web APIs.
 
@@ -6,10 +6,10 @@ REST API wrapper for Roblox APIs, including Cloud and Web APIs.
 
 ```sh
 # Using yarn
-yarn add @rbxio/rest
+yarn add @bracketed/rbxio.rest
 
 # Using npm
-npm install @rbxio/rest
+npm install @bracketed/rbxio.rest
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ npm install @rbxio/rest
 ### Main REST Client
 
 ```typescript
-import { RestClient } from '@rbxio/rest';
+import { RestClient } from '@bracketed/rbxio.rest';
 
 // Coming soon
 ```
@@ -25,7 +25,7 @@ import { RestClient } from '@rbxio/rest';
 ### Cloud API
 
 ```typescript
-import { CloudAPI } from '@rbxio/rest/cloud';
+import { CloudAPI } from '@bracketed/rbxio.rest/cloud';
 
 // Coming soon
 ```
@@ -33,7 +33,7 @@ import { CloudAPI } from '@rbxio/rest/cloud';
 ### Web APIs
 
 ```typescript
-import { WebAPI } from '@rbxio/rest/apis';
+import { WebAPI } from '@bracketed/rbxio.rest/apis';
 
 // Coming soon
 ```

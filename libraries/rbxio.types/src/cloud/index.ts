@@ -1,5 +1,5 @@
 /**
- * @rbxio/types/cloud - Cloud API type definitions
+ * @bracketed/rbxio.types/cloud - Cloud API type definitions
  */
 
 export type CloudAPIResponse = {

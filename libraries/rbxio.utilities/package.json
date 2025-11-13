@@ -1,5 +1,5 @@
 {
-	"name": "@rbxio/utilities",
+	"name": "@bracketed/rbxio.utilities",
 	"description": "Utility functions for working with Roblox APIs",
 	"version": "1.0.0",
 	"private": true,

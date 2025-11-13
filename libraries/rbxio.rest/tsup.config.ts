@@ -1,18 +1,2 @@
-import { defineConfig } from 'tsup';
+export * from '../../tsup.config.base';
 
-export default defineConfig([
-	{
-		entry: ['src/index.ts', 'src/cloud/index.ts', 'src/apis/index.ts'],
-		format: ['cjs', 'esm'],
-		dts: true,
-		splitting: false,
-		sourcemap: true,
-		clean: true,
-		outDir: 'lib',
-		outExtension({ format }) {
-			return {
-				js: format === 'cjs' ? '.cjs' : '.mjs',
-			};
-		},
-	},
-]);

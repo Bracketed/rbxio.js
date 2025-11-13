@@ -1,18 +1,3 @@
-import { defineConfig } from 'tsup';
+import { packageConfiguration } from '@bracketed/tsup-configuration';
 
-export default defineConfig([
-	{
-		entry: ['src/index.ts'],
-		format: ['cjs', 'esm'],
-		dts: true,
-		splitting: false,
-		sourcemap: true,
-		clean: true,
-		outDir: 'lib',
-		outExtension({ format }) {
-			return {
-				js: format === 'cjs' ? '.cjs' : '.mjs',
-			};
-		},
-	},
-]);
+export default [...packageConfiguration];

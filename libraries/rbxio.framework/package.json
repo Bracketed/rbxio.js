@@ -1,5 +1,5 @@
 {
-	"name": "@rbxio/framework",
+	"name": "@bracketed/rbxio.framework",
 	"description": "Framework for building Roblox API applications",
 	"version": "1.0.0",
 	"private": true,

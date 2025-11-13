@@ -1,5 +1,5 @@
 /**
- * @rbxio/utilities - Utility functions
+ * @bracketed/rbxio.utilities - Utility functions
  */
 
 export const utils = {
