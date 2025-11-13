@@ -3,10 +3,18 @@
 	"compilerOptions": {
 		"incremental": false,
 		"module": "ESNext",
-		"baseUrl": ".",
-		"rootDir": "./src",
-		"outDir": "./lib"
+		"baseUrl": "."
 	},
-	"include": ["src"],
-	"exclude": ["lib", "node_modules", "tsup.config.ts"]
+	"files": [],
+	"references": [
+		{ "path": "./libraries/rbxio.rest" },
+		{ "path": "./libraries/rbxio.ws" },
+		{ "path": "./libraries/rbxio.types" },
+		{ "path": "./libraries/rbxio.routes" },
+		{ "path": "./libraries/rbxio.client" },
+		{ "path": "./libraries/rbxio.framework" },
+		{ "path": "./libraries/rbxio.utilities" },
+		{ "path": "./libraries/rbxio.create" },
+		{ "path": "./libraries/rbxio.proxy" }
+	]
 }

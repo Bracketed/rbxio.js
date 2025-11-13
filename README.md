@@ -5,72 +5,98 @@
 
 <br>
 
-<h2 align="center" >@bracketed/logger</h2>
+<h2 align="center" >rbxio.js</h2>
 
-An alternative to your run-of-the-mill node console logging functions!
-This is a package built from the source code of [@sapphire/framework](https://www.npmjs.com/package/@sapphire/framework) & [@sapphire/plugin-logger](https://www.npmjs.com/package/@sapphire/plugin-logger) to allow usage of Sapphire's logger features in regular Node.js, full credit to the authors of the pieces of code that this package is made from.
+A comprehensive TypeScript/JavaScript library suite for interacting with Roblox APIs.
 
-<h2>What is this?</h2>
+## 📦 Packages
 
-\- A Logger package built from [@sapphire/framework](https://www.npmjs.com/package/@sapphire/framework) & [@sapphire/plugin-logger](https://www.npmjs.com/package/@sapphire/plugin-logger) that uses [colorette](https://www.npmjs.com/package/colorette) for styling.
+This monorepo contains the following packages:
 
-<h2>Summary (Directory)</h2>
+### Core Packages
 
--   [Installation](#Installation)
-      <!--truncate-->
-    -   [Yarn](#YarnInstall)
-    -   [Npm](#NpmInstall)
--   [Usage](#Usage)
--   [Contribution](#Contribution)
--   [ChangeLog](#versionlog)
+-   **[@rbxio/rest](./libraries/rbxio.rest)** - REST API wrapper for Roblox APIs
+    -   `@rbxio/rest` - Main REST client
+    -   `@rbxio/rest/cloud` - Cloud API wrapper
+    -   `@rbxio/rest/apis` - Web API wrapper
+-   **[@rbxio/ws](./libraries/rbxio.ws)** - WebSocket and polling event emitter for Roblox API changes
+-   **[@rbxio/types](./libraries/rbxio.types)** - TypeScript type definitions for Roblox APIs
+    -   `@rbxio/types` - Common types
+    -   `@rbxio/types/api` - API type definitions
+    -   `@rbxio/types/cloud` - Cloud API type definitions
 
-<h2 id="Installation">Installation</h2>
+### Utility Packages
 
-Install via `yarn` or `npm`:
+-   **[@rbxio/routes](./libraries/rbxio.routes)** - Route definitions and handlers
+-   **[@rbxio/client](./libraries/rbxio.client)** - High-level client library
+-   **[@rbxio/framework](./libraries/rbxio.framework)** - Framework for building Roblox API applications
+-   **[@rbxio/utilities](./libraries/rbxio.utilities)** - Utility functions
+-   **[@rbxio/proxy](./libraries/rbxio.proxy)** - Proxy server for Roblox API requests
 
-<p id="YarnInstall">Yarn:</p>
+### Developer Tools
+
+-   **[@rbxio/create](./libraries/rbxio.create)** - CLI tool to create rbxio-enabled projects
+
+## 🚀 Installation
+
+Install individual packages as needed:
 
 ```sh
-yarn add @bracketed/logger
+# Using yarn
+yarn add @rbxio/rest @rbxio/types
+
+# Using npm
+npm install @rbxio/rest @rbxio/types
 ```
 
-<p id="NpmInstall">Npm:</p>
+## 🛠️ Development
+
+This is a monorepo managed with Yarn workspaces. To get started:
 
 ```sh
-npm install --save @bracketed/logger
+# Install dependencies
+yarn install
+
+# Build all packages
+yarn build
+
+# Lint all packages
+yarn lint
+
+# Validate formatting
+yarn validate
+
+# Clean all build outputs
+yarn clean
 ```
 
-<h2 id="Usage">Usage</h2>
+### Building Individual Packages
 
-```ts
-// ESM
-import { Logger, LogLevel } from '@bracketed/logger';
-const console = new Logger();
-
-console.info('Hello World!');
-console.debug('Hello World!');
-console.warn('Hello World!');
-console.error('Hello World!');
-console.fatal('Hello World!');
-console.trace('Hello World!');
-console.write(LogLevel.Info, 'Hello World!');
+```sh
+# Build a specific package
+cd libraries/rbxio.rest
+yarn build
 ```
 
-```ts
-// CJS
-const { Logger, LogLevel } = require('@bracketed/logger');
-const console = new Logger();
+## 📝 Project Structure
 
-console.info('Hello World!');
-console.debug('Hello World!');
-console.warn('Hello World!');
-console.error('Hello World!');
-console.fatal('Hello World!');
-console.trace('Hello World!');
-console.write(LogLevel.Info, 'Hello World!');
+```
+rbxio.js/
+├── libraries/           # All packages
+│   ├── rbxio.rest/     # REST API wrapper
+│   ├── rbxio.ws/       # WebSocket client
+│   ├── rbxio.types/    # Type definitions
+│   ├── rbxio.routes/   # Route handlers
+│   ├── rbxio.client/   # Client library
+│   ├── rbxio.framework/ # Framework
+│   ├── rbxio.utilities/ # Utilities
+│   ├── rbxio.create/   # CLI tool
+│   └── rbxio.proxy/    # Proxy server
+├── tsconfig.base.json  # Shared TypeScript config
+└── package.json        # Root workspace config
 ```
 
-<h1 id="Contribution">Contribution & Help</h1>
+## 🤝 Contribution & Help
 
 Feel free to contribute to this project, join our [discord](https://bracketed.co.uk/discord) and help us with future development of Project Bracketed.
 Please also notify us of errors within our projects as we may not be aware of them at the time.

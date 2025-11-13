@@ -1,0 +1,49 @@
+{
+	"name": "@rbxio/client",
+	"description": "Client library for interacting with Roblox APIs",
+	"version": "1.0.0",
+	"private": true,
+	"publishConfig": {
+		"access": "public"
+	},
+	"license": "Apache-2.0",
+	"author": "@bracketed",
+	"main": "lib/cjs/index.cjs",
+	"module": "lib/esm/index.mjs",
+	"types": "lib/cjs/index.d.ts",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./lib/esm/index.d.mts",
+				"default": "./lib/esm/index.mjs"
+			},
+			"require": {
+				"types": "./lib/cjs/index.d.ts",
+				"default": "./lib/cjs/index.cjs"
+			}
+		}
+	},
+	"files": [
+		"lib"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bracketed/rbxio.js",
+		"directory": "libraries/rbxio.client"
+	},
+	"homepage": "https://bracketed.co.uk",
+	"sideEffects": false,
+	"bugs": {
+		"url": "https://github.com/bracketed/rbxio.js/issues"
+	},
+	"keywords": [
+		"roblox",
+		"rbxio",
+		"client"
+	],
+	"scripts": {
+		"lint": "prettier --write .",
+		"validate": "prettier --check .",
+		"build": "tsup"
+	}
+}

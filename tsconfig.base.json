@@ -1,0 +1,9 @@
+{
+	"extends": ["@bracketed/typescript-config/tsup-strict"],
+	"compilerOptions": {
+		"incremental": false,
+		"module": "ESNext",
+		"baseUrl": "."
+	},
+	"exclude": ["lib", "node_modules", "tsup.config.ts"]
+}
