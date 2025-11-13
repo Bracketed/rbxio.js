@@ -40,11 +40,11 @@ import { WebAPI } from '@rbxio/rest/apis';
 
 ## Features
 
--   🔄 Full REST API support for Roblox
--   ☁️ Cloud API integration
--   🌐 Web API integration
--   📘 Full TypeScript support
--   🔒 Type-safe requests and responses
+- 🔄 Full REST API support for Roblox
+- ☁️ Cloud API integration
+- 🌐 Web API integration
+- 📘 Full TypeScript support
+- 🔒 Type-safe requests and responses
 
 ## License
 
